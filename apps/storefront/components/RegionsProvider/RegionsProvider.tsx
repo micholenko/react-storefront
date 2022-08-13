@@ -11,6 +11,7 @@ import { LanguageCodeEnum, PriceFragment } from "@/saleor/api";
 
 import * as sourceOfTruth from "../../locale/en-US.json";
 import * as pl from "../../locale/pl-PL.json";
+import * as cs from "../../locale/cs-CZ.json";
 
 export interface RegionsConsumerProps {
   channels: Channel[];
@@ -35,6 +36,8 @@ export function importMessages(locale: string): LocaleMessages {
       return sourceOfTruth;
     case "pl-PL":
       return pl;
+    case "cs-CZ":
+      return cs
     default:
       return sourceOfTruth;
   }
